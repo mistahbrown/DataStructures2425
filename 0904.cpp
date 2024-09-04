@@ -1,4 +1,5 @@
 #include "0904.h"
+#include <cassert>
 
 int main()
 {
