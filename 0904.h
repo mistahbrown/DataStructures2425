@@ -14,7 +14,34 @@ using namespace std;
 
 void printPyramid(int n)
 {
-    // Your code here!
+    int nspaces = n - 1;
+    for (int i = 0; i < n; i++)
+    {
+        int num = 1;
+        for (int j = 0; j < nspaces; j++)
+        {
+            cout << "    ";
+        }
+        for (int k = 0; k < (i+1); k++)
+        {
+            cout << num;
+            if (num > 100) cout << " ";
+            else if (num > 10) cout << "  ";
+            else cout << "   ";
+            num *= 2;
+        }
+        num /= 2;
+        for (int k = 0; k < i; k++)
+        {
+            num /= 2;
+            cout << num;
+            if (num > 100) cout << " ";
+            else if (num > 10) cout << "  ";
+            else cout << "   ";
+        }
+        nspaces--;
+        cout << endl;
+    }
 }
 
 /*  recursiveFibonacci() - takes in an integer n and returns the nth number in the
