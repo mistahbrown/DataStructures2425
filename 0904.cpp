@@ -5,6 +5,7 @@ int main()
 {
     cout << "Running pyramid tests..." << endl;
 
+
     printPyramid(5);
     printPyramid(2);
     printPyramid(8);
